@@ -25,7 +25,7 @@ namespace DemoWebAPI.Controllers
             return Ok(products);
         }
 
-        [HttpGet("getbyid/{id}")]
+        [HttpGet("getbyid")]
         
         public async Task<ActionResult<Product>> Get(int id)
         {
@@ -58,7 +58,7 @@ namespace DemoWebAPI.Controllers
             return Ok(await _context.Products.ToListAsync());
         }
 
-        [HttpDelete("delete/{id}")]
+        [HttpDelete("delete")]
         public async Task<ActionResult<List<Product>>> Delete(int id)
         {
             var dbproduct = await _context.Products.FindAsync(id);
