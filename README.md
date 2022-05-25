@@ -1,1 +1,1 @@
-# This is a DemoWebAPI just for practice.
+# DemoWebAPI just for practice.
