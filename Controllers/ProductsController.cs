@@ -25,15 +25,15 @@ namespace DemoWebAPI.Controllers
             return Ok(products);
         }
 
-        //[HttpGet("getbyid")]
+        [HttpGet("getbyid")]
 
-        //public async Task<ActionResult<Product>> Get(int id)
-        //{
-        //    var product = await _context.Products.FindAsync(id);
-        //    if (product == null)
-        //        return NotFound();
-        //    return Ok(product);
-        //}
+        public async Task<ActionResult<Product>> Get(int id)
+        {
+            var product = await _context.Products.FindAsync(id);
+            if (product == null)
+                return NotFound();
+            return Ok(product);
+        }
 
         [HttpPost("create")]
         public async Task<ActionResult> AddProduct(Product p)
