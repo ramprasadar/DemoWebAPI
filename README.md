@@ -1,1 +1,1 @@
-# DemoWebAPI just for practice.
+# DemoWebAPI - Basic CRUD operations.
