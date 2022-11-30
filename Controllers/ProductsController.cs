@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using DemoWebAPI.Models;
+using Microsoft.EntityFrameworkCore;
 using DemoWebAPI.Data;
 
 namespace DemoWebAPI.Controllers
