@@ -22,7 +22,7 @@ namespace DemoWebAPI.Controllers
         public async Task<ActionResult> GetAllProducts()
         {
             
-            products = _context.Products.ToList();
+            products = await _context.Products.ToListAsync();
             return Ok(products);
         }
 
